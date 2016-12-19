@@ -1,0 +1,22 @@
+---
+title: "Week 3 Plotly Presentation"
+author: "Pratyusa Mukherjee"
+date: "December 18, 2016"
+output: ioslides_presentation
+---
+## Average Yearly Temperature in New Haven, CT (1912-1971)
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(plotly)
+years <-c(1912:1971)
+data("nhtemp")
+plot_ly(x = years, y = nhtemp, type = "scatter", mode = "markers", color = nhtemp)
+```
+
+## Explanation of the plot
+
+- The above plot plots the average yearly temperatures in New Haven from the data set nhtemp.
+- It is a scatterplot and plots data for the years 1912 to 1971.
+- The color of the plot points is an indication of temperature.
+
+## Thank you
